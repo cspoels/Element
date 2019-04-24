@@ -1,0 +1,7 @@
+{
+  "name": "@cspoels/Element",
+  "version": "0.0.1",
+  "license": "MIT",
+  "main": "index.js",
+  "keywords": ["dom", "element", "quickfix"]
+}
