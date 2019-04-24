@@ -1,5 +1,5 @@
 {
-  "name": "@cspoels/Element",
+  "name": "@cspoels/element",
   "version": "0.0.1",
   "description": "Tiny and quick way to create DOM elements",
   "license": "MIT",
