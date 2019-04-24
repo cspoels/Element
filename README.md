@@ -1,4 +1,4 @@
-# @cspoels:Element
+# @cspoels:element
 
 ## Install
 
@@ -10,7 +10,7 @@ yarn add @cspoels/Element
 ## Use
 To start, load the script
 ```js
-const Element = require('@cspoels/Element')
+const Element = require('@cspoels/element')
 ```
 
 To create a new element in the body of the document
