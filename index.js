@@ -1,4 +1,4 @@
-class Element {
+module.exports = class Element {
   constructor(root) {
     this.el = {
       root: null, // Parent element to put this Element element into
