@@ -1,7 +1,9 @@
 {
   "name": "@cspoels/Element",
   "version": "0.0.1",
+  "description": "Tiny and quick way to create DOM elements",
   "license": "MIT",
   "main": "index.js",
+  "repository": "cspoels/Element",
   "keywords": ["dom", "element", "quickfix"]
 }
