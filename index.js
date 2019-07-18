@@ -8,11 +8,12 @@ module.exports = class Element {
       this.el.root = document.getElementById(root)
     } else if (root instanceof Element) {
       this.el.root = root.el.container
-    } else if (typeof root === 'object') {
-      this.el.root = root
     } else if (root == null) {
       this.el.root = document.body
+    } else if (typeof root === 'object') {
+      this.el.root = root
     }
+
   }
 
   create (elementType = 'div') {
