@@ -47,6 +47,12 @@ module.exports = class Element {
     this.el.container.innerText = t
     return this
   }
+
+  html (t) {
+    this.el.container.innerHTML = t
+    return this
+  }
+
   value (v) {
     this.el.container.setAttribute('value', v)
     return this
