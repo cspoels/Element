@@ -1,5 +1,5 @@
 module.exports = class Element {
-  constructor(root) {
+  constructor(root = null) {
     this.el = {
       root: null, // Parent element to put this Element element into
       container: null, // This element
@@ -10,6 +10,8 @@ module.exports = class Element {
       this.el.root = root.el.container
     } else if (typeof root === 'object') {
       this.el.root = root
+    } else if (root == null) {
+      this.el.root = document.body
     }
   }
 
