@@ -22,11 +22,9 @@ An element will be created, it will remember the root for appending alter. The r
  - A string: To search by id
  - A DOM element to appen dto
  - Another Element instance
+ - [Default] null, will transform to document.body
 
 you can alter the element with functions as:
 ```js
-element.class('is-primary').id('super-element').text('I am the best element').deploy()
+element.class('is-primary').id('super-element').text('I am the best element')
 ```
-
-Dont forget to `deploy()` to append the element to the previously provided root element. 
-
