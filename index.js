@@ -17,6 +17,7 @@ module.exports = class Element {
 
   create(elementType = 'div') {
     this.el.container = document.createElement(elementType)
+    this.el.root.appendChild(this.el.container)
     return this
   }
   id(idName) {
@@ -26,10 +27,6 @@ module.exports = class Element {
   class(className) {
     this.el.container.classList.add(className)
     return this
-  }
-  deploy() {
-    this.el.root.appendChild(this.el.container)
-    return this.el.container
   }
   append(child) {
     this.el.container.appendChild(child)
