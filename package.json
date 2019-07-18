@@ -1,6 +1,6 @@
 {
   "name": "@cspoels/element",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Tiny and quick way to create DOM elements",
   "license": "MIT",
   "main": "index.js",
