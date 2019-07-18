@@ -6,6 +6,7 @@ module.exports = class Element {
     }
     if (typeof root === 'string') {
       this.el.root = document.getElementById(root)
+      if (this.el.root == null) throw new Error('Can not find element with this id')
     } else if (root instanceof Element) {
       this.el.root = root.el.container
     } else if (root == null) {
@@ -13,7 +14,6 @@ module.exports = class Element {
     } else if (typeof root === 'object') {
       this.el.root = root
     }
-
   }
 
   create (elementType = 'div') {
