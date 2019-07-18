@@ -21,14 +21,20 @@ module.exports = class Element {
     this.el.root.appendChild(this.el.container)
     return this
   }
-  
+
   id (idName) {
     this.el.container.setAttribute('id', idName)
     return this
   }
-  
-  class (className) {
-    this.el.container.classList.add(className)
+
+  class(className) {
+    if (Array.isArray(className)) {
+      className.forEach(cn => {
+        this.el.container.classList.add(cn)
+      })
+    } else {
+      this.el.container.classList.add(className)
+    }
     return this
   }
 
