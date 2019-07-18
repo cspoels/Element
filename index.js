@@ -1,5 +1,5 @@
 module.exports = class Element {
-  constructor(root = null) {
+  constructor (root = null) {
     this.el = {
       root: null, // Parent element to put this Element element into
       container: null, // This element
@@ -15,31 +15,32 @@ module.exports = class Element {
     }
   }
 
-  create(elementType = 'div') {
+  create (elementType = 'div') {
     this.el.container = document.createElement(elementType)
+    this.el.root.appendChild(this.el.container)
     return this
   }
-  id(idName) {
+  
+  id (idName) {
     this.el.container.setAttribute('id', idName)
     return this
   }
-  class(className) {
+  
+  class (className) {
     this.el.container.classList.add(className)
     return this
   }
-  deploy() {
-    this.el.root.appendChild(this.el.container)
-    return this.el.container
-  }
-  append(child) {
+
+  append (child) {
     this.el.container.appendChild(child)
     return this
   }
-  text(t) {
+
+  text (t) {
     this.el.container.innerText = t
     return this
   }
-  value(v) {
+  value (v) {
     this.el.container.setAttribute('value', v)
     return this
   }
